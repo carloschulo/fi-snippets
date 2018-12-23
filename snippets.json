@@ -1,0 +1,30 @@
+{
+	"Layout maxwidth": {
+		"prefix": "laymw",
+		"body": [
+			"  - type: layout",
+			"    metadata: grid/maxwidth",
+			"    path: grid/maxwidth",
+			"    regions:",
+			"      - id: region1",
+			"        blocks:",
+			"          - type: ${1:block}"
+		],
+		"description": "Layout maxwidth"
+	},
+  "Layout Aligment": {
+    "prefix": "layal",
+    "body": [
+      "- type: layout",
+      "    path: grid/alignment",
+      "    metadata: alignment",
+      "    horizontal: ${1:left,center, or right}",
+      "    vertical: ${2:top, middle, or bottom}",
+      "    regions:",
+      "      - id: region1",
+      "        blocks:",
+      "          - type: ${3:some other block}"
+    ],
+    "description": "Layout Aligment"
+  }
+}
