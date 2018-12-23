@@ -1,30 +1,60 @@
 {
-	"Layout maxwidth": {
-		"prefix": "laymw",
-		"body": [
-			"  - type: layout",
-			"    metadata: grid/maxwidth",
-			"    path: grid/maxwidth",
-			"    regions:",
-			"      - id: region1",
-			"        blocks:",
-			"          - type: ${1:block}"
-		],
-		"description": "Layout maxwidth"
-	},
+  "Layout maxwidth": {
+    "prefix": "laymw",
+    "body": [
+      " - type: layout",
+      "   metadata: grid/maxwidth",
+      "   path: grid/maxwidth",
+      "   regions:",
+      "     - id: region1",
+      "       blocks:",
+      "         ${1:some other blocks here}"
+    ],
+    "description": "Layout maxwidth"
+  },
   "Layout Aligment": {
     "prefix": "layal",
     "body": [
       "- type: layout",
-      "    path: grid/alignment",
-      "    metadata: alignment",
-      "    horizontal: ${1:left,center, or right}",
-      "    vertical: ${2:top, middle, or bottom}",
-      "    regions:",
-      "      - id: region1",
-      "        blocks:",
-      "          - type: ${3:some other block}"
+      "  path: grid/alignment",
+      "  metadata: alignment",
+      "  horizontal: ${1:left,center, or right}",
+      "  vertical: ${2:top, middle, or bottom}",
+      "  regions:",
+      "    - id: region1",
+      "      blocks:",
+      "        ${3:some other blocks here}"
     ],
     "description": "Layout Aligment"
+  },
+  "Layout centered": {
+    "prefix": "laycen",
+    "body": [
+      "- type: layout",
+      "  path: grid/centered",
+      "  metadata: centered",
+      "  regions:",
+      "    - id: region1",
+      "      blocks:",
+      "        ${1:some other blocks here}"
+    ],
+    "description": "Layout centered"
+  },
+  "Layout fifty-fifty": {
+    "prefix": "layfif",
+    "body": [
+      "- type: layout",
+      "  metadata: fifty-fifty",
+      "  path: grid/fifty-fifty",
+      "  reverse_stack: ${1:true or false}",
+      "  regions:",
+      "    - id: region1",
+      "      blocks:",
+      "        ${2:some other blocks here}",
+      "    - id: region2",
+      "      blocks:",
+      "        ${3:some other blocks here}"
+    ],
+    "description": "Layout fifty-fifty"
   }
 }
