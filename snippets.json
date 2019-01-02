@@ -1,6 +1,6 @@
 {
   "Layout maxwidth": {
-    "prefix": "laymw",
+    "prefix": "laymaxwid",
     "body": [
       " - type: layout",
       "   metadata: grid/maxwidth",
@@ -8,7 +8,7 @@
       "   regions:",
       "     - id: region1",
       "       blocks:",
-      "         ${1:some other blocks here}"
+      "         ${0:some other blocks here}"
     ],
     "description": "Layout maxwidth"
   },
@@ -23,7 +23,7 @@
       "  regions:",
       "    - id: region1",
       "      blocks:",
-      "        ${3:some other blocks here}"
+      "        ${0:some other blocks here}"
     ],
     "description": "Layout Aligment"
   },
@@ -36,7 +36,7 @@
       "  regions:",
       "    - id: region1",
       "      blocks:",
-      "        ${1:some other blocks here}"
+      "        ${0:some other blocks here}"
     ],
     "description": "Layout centered"
   },
@@ -53,8 +53,131 @@
       "        ${2:some other blocks here}",
       "    - id: region2",
       "      blocks:",
-      "        ${3:some other blocks here}"
+      "        ${0:some other blocks here}"
     ],
     "description": "Layout fifty-fifty"
+  },
+  "Layout fit-remainder": {
+    "prefix": "layfitrem",
+    "body": [
+      "- type: layout",
+      "  metadata: grid/fit-remainder",
+      "  path: grid/fit-remainder",
+      "  regions:",
+      "    - id: region1",
+      "      disableMargin: ${1:true or false}",
+      "      disablePadding: ${2:true or false}",
+      "      blocks:",
+      "        ${3:more blocks}",
+      "    - id: region2",
+      "      disableMargin: ${1:true or false}",
+      "      disablePadding: ${2:true or false}",
+      "      blocks:",
+      "        ${0:more blocks}"
+    ],
+    "description": "Layout fit-remainder"
+  },
+  "Layout forty-sixty": {
+    "prefix": "layforsix",
+    "body": [
+      "- type: layout",
+      "  metadata: forty-sixty",
+      "  path: grid/forty-sixty",
+      "  regions:",
+      "    - id: region1",
+      "      disableMargin: ${1:true or false}",
+      "      disablePadding: ${2:true or false}",
+      "      blocks:",
+      "        ${3:more blocks}",
+      "    - id: region2",
+      "      disableMargin: ${1:true or false}",
+      "      disablePadding: ${2:true or false}",
+      "      blocks:",
+      "        ${0:more blocks}"
+    ],
+    "description": "Layout forty-sixty"
+  },
+  "Layout four-column": {
+    "prefix": "layfourcol",
+    "body": [
+      "- type: layout",
+      "  metadata: four-column",
+      "  path: grid/four-column",
+      "  regions:",
+      "    - id: region1",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${2:more blocks}",
+      "    - id: region2",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${3:more blocks}",
+      "    - id: region3",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${4:more blocks}",
+      "    - id: region4",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${0:more blocks}"
+    ],
+    "description": "Layout four-column"
+  },
+  "Layout hatLabel": {
+    "prefix": "layhatlab",
+    "body": [
+      "- type: layout",
+      "  metadata: hatlabel",
+      "  path: grid/hatlabel",
+      "  class0: body",
+      "  class1: label",
+      "  regions:",
+      "    - id: region1",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${2:more blocks}",
+      "    - id: region2",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${0:more blocks}",
+      ""
+    ],
+    "description": "Layout hatLabel"
+  },
+  "Layout row": {
+    "prefix": "layrow",
+    "body": [
+      "- type: layout",
+      "  metadata: row",
+      "  path: grid/row",
+      "  regions:",
+      "    - id: region1",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${0:more blocks}"
+    ],
+    "description": "Layout row"
+  },
+  "Layout three-column": {
+    "prefix": "laythreecol",
+    "body": [
+      "- type: layout",
+      "  metadata: row",
+      "  path: grid/row",
+      "  regions:",
+      "    - id: region1",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${2:more blocks}",
+      "    - id: region2",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${3:more blocks}",
+      "    - id: region3",
+      "      ${1:region params?}",
+      "      blocks:",
+      "        ${0:more blocks}"
+    ],
+    "description": "Layout three-column"
   }
 }
