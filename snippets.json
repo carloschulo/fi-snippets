@@ -257,7 +257,8 @@
       "                    path: ${2:images/modules/M02/someimage.png}",
       "                minHeight:",
       "                  override: true",
-      "                  value: ${3:160px}"
+      "                  value:${3:160px}",
+      "${0:more blocks}"
     ],
     "description": "Component card"
   }
